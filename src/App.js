@@ -1,11 +1,9 @@
-
-import Header from './Menu project/components/Header/Header';
-
+import AppProvider from "./Cart/GlobalContext";
 function App() {
   return (
-   <>
-   <Header />
-   </>
+    <>
+      <AppProvider/>
+    </>
   );
 }
 

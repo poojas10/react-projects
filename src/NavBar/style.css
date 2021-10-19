@@ -1,0 +1,121 @@
+.title {
+  font-size: 1.8rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.section {
+  padding: 0.3rem 0.4rem;
+  background: #ffffff;
+  margin: 0;
+  height: auto;
+  overflow: hidden;
+  width: 100vw;
+  transition: all 0.3s linear;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+nav {
+  max-height: 0;
+  transition: all 0.3s linear;
+  height: 250px;
+  color: #222;
+}
+.toggle-btn {
+  display: block;
+  transition: all 0.3s linear;
+  outline: none;
+  border: none;
+  color: #49a6e9;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.toggle-btn:hover {
+  border: none;
+  transform: rotate(90deg);
+  color: #063251;
+  transition: all 0.3s linear;
+}
+.social-media-links {
+  display: none;
+}
+ul {
+  transition: all 0.3s linear;
+}
+.links-container {
+  height: 10rem;
+  margin: 1rem 0;
+  transition: all 1s ease-in;
+  padding: 0.4rem;
+}
+.links-container li {
+  padding: 0.7rem 0;
+  letter-spacing: 2px;
+}
+.links-container li:hover {
+  padding: 0.7rem 1.6rem;
+  background-color: #6ebef7;
+  color: #324d67;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+@media screen and (min-width: 810px) {
+  header {
+    flex: 1;
+  }
+  nav {
+    max-height: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 2;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .section {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    /* padding: 1rem 2rem; */
+    align-items: center;
+    padding: 0 2rem;
+    min-width: 100%;
+  }
+  .social-media-links,
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.4rem;
+  }
+  .links-container {
+    width: 60%;
+    justify-content: space-evenly;
+  }
+  .links-container a{
+    color: #222;
+  }
+  .links-container a:hover{
+    color: #49a6e9;
+  }
+  .links-container li:hover{
+    padding: 0.7rem 0;
+    background-color:transparent;
+  }
+  .social-media-links {
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .fab {
+    color: #49a6e9;
+    font-size: 1.3rem;
+  }
+  .fab:hover {
+    opacity: 0.7;
+  }
+  li {
+    margin: 0 0.4rem;
+  }
+}
